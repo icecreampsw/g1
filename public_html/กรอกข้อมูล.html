@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <title>การสร้างปุ่มเลือกรายการเดียว</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+        <style>
+            th {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        
+<div class="w3-container w3-display-container w3-padding-24 w3-red">
+            <img src="img/good.png"  width="70" height="80" align="Left"><font Face="LilyUPC" Size = "5.5">&nbsp; DEPARTMENT OF COMPUTER SCIENCE <br>&nbsp;&nbsp;THAMMASAT UNIVERSITY</font>
+        
+            <div>
+            <h1 class="w3-display-topright" align="Right"> <font Face="LilyUPC" Size = "8" style="color:#ffdd1a;" > สำนักงานทะเบียนนักศึกษา &nbsp;</font><br>
+                <span style= "color:white;font-size:20px" class="pull-right"><font Face="LilyUPC" Size = "6">OFFICE OF A REGISTRAR &nbsp;&nbsp;</font></span>
+            
+            </h1>   
+            </div>
+          </div>
+
+            <!-- Sidebar -->
+            <div class="w3-sidebar w3-yellow w3-bar-block" style="width:15%;top:17.98% ">
+
+            <br><br>
+            <div> 
+                <a href="logout.html" class="w3-margin-left w3-bar-item w3-button w3-red w3-hover-shadow"style="width:80%">
+                    <img align = 'left' src="img/back.png"  width="30" height="50">&nbsp;<font Face="LilyUPC" Size="6.5">ถอยกลับ</a>
+            </div>
+        <br>
+            <div>
+                <a href="#" class="w3-margin-left w3-button w3-red w3-hover-shadow"style="width:80%">
+                    <img align = 'left' src="img/clock.png"  width="40" height="40"><font size="5">ติดตามผลคำร้อง</a>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div align = 'middle'>
+                <a><u>Contact Us</u></a></div>
+</div>
+
+
+
+        <div id="myContent" class="w3-container" style="margin-left :14% "> 
+
+            <div class="w3-card-4">
+                <div class="w3-container w3-white">
+                    <h2>61096501234 นางสาว ใจดี รักธรรมศาสตร์</h2>
+                    
+                    <h1 style="font-family:LilyUPC;color:d04f4a;font-size:35px">Step 1 : กรอกรายละเอียดต่างๆ แล้ว click <u>เข้าสู่หน้าขอเอกสาร</u></h1>
+                    <h2 style="font-family:LilyUPC;color:d04f4a;font-size:35px">Step 2 : ระบุการรับเอกสาร เลือกรายการ ระบุจำนวนและรายละเอียดเพิ่มเติม</h2>
+                    <h3 style="font-family:LilyUPC;color:d04f4a;font-size:35px">Step 3 : ตรวจสอบความถูกต้อง แล้ว click ยืนยันการทำรายการ</h3>
+                    <h4 style="font-family:LilyUPC;color:d04f4a;font-size:40px"><u>ข้อมูลนักศึกษา</u></h4>
+                    
+
+                </div>
+                <form class="w3-container " action="/action_page.php">
+                   
+                    <div>
+                        <table width=72% style="border:1px dashed #d04f4a;" cellspacing="5" 
+                               bgcolor="#d04f4a" cellpadding="5"><tr><td style="border:1px #d04f4a;
+                                                                  " bgcolor="white">
+                                       
+                     
+                    <br>
+                    <span class=" w3-red  w3-padding w3-center " ><font size="5">  ชื่อ-นามสกุล ภาษาอังกฤษ *</span>
+                  
+                  
+                  <style> 
+
+                    input[type=text] {
+                  width: 35%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+
+                    <input type="text" name="firstname" required pattern="[A-Z][A-za-z0-9]*" maxlength="35" size="35"
+                           placeholder="Ex.Jaidee lovetu">
+                    <span class="  w3-red  w3-padding w3-center "> เลขทะเบียนนักศึกษา *</span>
+                  
+                    <style> 
+
+                    input[type=id] {
+                  width: 18%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                    <input type="id" name="id" required pattern="[0-9]*" maxlength="10"size="10"
+                           placeholder="Ex.61096501234">
+                    <br>
+                    
+                    <span class="  w3-red  w3-padding w3-center "> คณะ *</span>
+                    <FORM>
+<SELECT NAME=fac>
+        <option>กรุณาเลือกคณะ
+        <OPTION>นิติศาสตร์
+        <OPTION>พาณิชยศาสตร์และการบัญชี
+        <OPTION>รัฐศาสตร์
+        <OPTION>เศรษฐศาสตร์
+        <OPTION>สังคมสงเคราะห์ศาสตร์
+        <OPTION>สังคมวิทยาและมานุษยวิทยา
+        <OPTION>ศิลปศาสตร์
+        <OPTION>วารสารศาสตร์และสื่อสารมวลชน
+        <OPTION>วิทยาศาสตร์และเทคโนโลยี
+        <OPTION>วิศวกรรมศาสตร์
+        <OPTION>สถาบันเทคโนโลยีนานาชาติสิรินธร
+        <OPTION>สถาปัตยกรรมศาสตร์และการผังเมือง
+        <OPTION>ศิลปกรรมศาสตร์
+        <OPTION>แพทยศาสตร์
+        <OPTION>สหเวชศาสตร์
+        <OPTION>ทันตแพทยศาสตร์
+        <OPTION>พยาบาลศาสตร์
+        <OPTION>สาธารณสุขศาสตร์  
+        <OPTION>เภสัชศาสตร์
+        <OPTION>วิทยาการเรียนรู้และศึกษาศาสตร์
+        <OPTION>วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์
+        <OPTION>วิทยาลัยนวัตกรรม
+        <OPTION>วิทยาลัยสหวิทยาการ 
+        <OPTION>วิทยาลัยนานาชาติ ปรีดี พนมยงค์
+        <OPTION>วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์
+        <OPTION>วิทยาลัยโลกคดีศึกษา
+        <OPTION>วิทยาลัยนวัตกรรม    
+            
+</SELECT>
+</FORM>
+         
+                <span class="  w3-red  w3-padding w3-center ">ระดับการศึกษา *</span>
+                   
+                    <style> 
+
+                    input[type=level] {
+                  width: 38%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                        <input type="level" name="lastname" required pattern="[A-Z][A-za-z0-9]*" maxlength="10"
+                           placeholder="Ex.ปริญญาตรี ภาคพิเศษ">
+                        <br>
+                      <span class="  w3-red  w3-padding w3-center ">สาขาวิชา *</span>
+                    
+                    <style> 
+
+                    input[type=sa] {
+                  width: 84%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                        <input type="sa" name="lastname" required pattern="[A-Z][A-za-z0-9]*" maxlength="10"
+                           placeholder="Ex.วิทยาการคอมพิวเตอร์">
+                        <br>
+                        <span class="  w3-red  w3-padding w3-center ">สถานภาพการศึกษา *</span>
+                           
+                    <style> 
+
+                    input[type=status] {
+                  width: 76%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                        <input type="status" name="lastname" required pattern="[A-Z][A-za-z0-9]*" maxlength="10"
+                           placeholder="Ex.ปกติ">
+                        <br>
+                        <span class="  w3-red  w3-padding w3-center ">ที่อยู่ปัจจุบัน *</span>
+                     
+                    <style> 
+
+                    input[type=address] {
+                  width: 82%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                        <input type="address" name="lastname" required pattern="[A-Z][A-za-z0-9]*" maxlength="10" size="70"
+                           placeholder="Ex.หมู่บ้านสดใส">
+                        <br>
+                        <span class="  w3-red  w3-padding w3-center ">E-mail *</span>
+                       
+                    <style> 
+
+                    input[type=mail] {
+                  width: 84%;
+                  padding: 7px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  border: none;
+                  background-color: #DADAE4;
+                  color: black;
+                }
+                </style>
+                        <input type="mail" name="lastname" required pattern="[A-Z][A-za-z0-9]*" maxlength="10" size="30"
+                           placeholder="Ex.tu@gmail.com">
+                    
+                     </td></tr></table>
+                        <h5 style="font-family:LilyUPC;color:d04f4a;font-size:30px">**กรุณากรอกข้อมูลให้ครบ**</h5>
+                    <br>
+                    </div>
+                     <input type="submit" value="เข้าสู่หน้าขอเอกสาร" style="margin-left:400px;color:black">
+                     
+
+
+            
+                        
+
+
+                            
+            
+            
+            
+                     <br>
+                     <br>
+                     <br>
+         <div align = 'right'>
+             
