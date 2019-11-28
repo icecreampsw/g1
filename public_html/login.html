@@ -45,14 +45,15 @@
                 </div>
                 <form class="w3-container w3-gray" style="height :175px ;width: 400;"action="logout.html">
                    
-                    <input class="w3-container w3-yellow" type="text" name="Username" placeholder="Username" size=25 >
+                    
+                    <input class="w3-container w3-yellow" type="text" name="Username" placeholder="Username" pattern="[0-9]*" maxlength="10" size=25 >
                     <br>
                     <br>
-                    <input class="w3-container w3-yellow"type="Password" name="Password"placeholder="Password" size="25" >
+                    <input class="w3-container w3-yellow"type="Password" name="Password"placeholder="Password" pattern="[A-z0-9]*" maxlength="10" size="25" >
                     <br><br>
                     <a href="#logout.html"><input class="btlogin"type="submit" value="submit" ></a>
-
-                    <button >Change Password</button>                     
+                    
+                    <button >Change Password</button>                       
                       
                  
                 </form> 
